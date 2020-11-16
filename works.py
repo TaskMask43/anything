@@ -7,8 +7,8 @@ w = (255,255,255)
 
 while True:
     temp=sense.get_temperature()
-    temp = round(temp, 1)
-    #temp = 14
+    #temp = round(temp, 1)
+    temp = 10
     print (temp)
     
     if (temp) > 26.7:
@@ -19,7 +19,7 @@ while True:
             warn = ("DANGER! TEMPERATURE LOW:")
     else:
         colour = w
-        warn = (" ")
+        warn = ("")
     
     sense.show_message(f"{warn} {temp}", text_colour=colour, scroll_speed = 0.08)
             
