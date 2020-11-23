@@ -8,7 +8,7 @@ w = (255,255,255)
 while True:
     temp=sense.get_temperature()
     #temp = round(temp, 1)
-    temp = 10
+    temp = 13
     print (temp)
     
     if (temp) > 26.7:
